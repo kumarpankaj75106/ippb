@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Paytm/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Paytm/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Paytm/favicon-16x16.png">
+<link rel="manifest" href="/Paytm/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Website Suspended or blocked</title>
+    <style>
+        #img
+        {
+        width: 104%;
+        margin:-8px;
+        margin-left:-7px;
+        }
+        #ww
+        {
+           width:8%;
+           position: absolute;
+           margin:-3.8px;
+           margin-left:20px;
+        }
+        #col
+        {
+        width:104%;   
+        background-color:#D83025;
+        height:550px;
+        margin:-6px;
+        margin-left:-7px;
+        }
+        #ll
+        {
+        width: 335px;
+        background-color: white;
+        color: #C5211F;
+        border: solid;
+        font-weight: bold;
+        border-radius: 4px;
+        border-width: 1px;
+        cursor: pointer;
+        font-size: 12px;
+        height: 45px;
+        margin-top:285px;
+        }
+   </style>
+   <script language="javascript">
+   
+   var message="Long press disabled.";
+   function clickIE4(){
+   
+   if (event.button==2){
+   alert(message);
+   return false;
+   }
+   }
+   
+   function clickNS4(e){
+   if (document.layers||document.getElementById&&!document.all){
+   if (e.which==2||e.which==3){
+   alert(message);
+   return false;
+   }
+   }
+   }
+   
+   if (document.layers){
+   document.captureEvents(Event.MOUSEDOWN);
+   document.onmousedown=clickNS4;
+   }
+   
+   else if (document.all&&!document.getElementById){
+   document.onmousedown=clickIE4;
+   }
+   
+   document.oncontextmenu=new Function("alert(message);return false;")
+   
+   </script>
+   </head>
+   <body>
+   <center><img src="i.jpg" alt="" id="img"></center>
+   <div id="col">
+   <b style="color:white; font-family: 'Inter', sans-serif; font-size:20px;margin-left:20px;">This website is blocked</b><br><br>
+   <p1 style="color:white; font-family: 'Inter', sans-serif; letter-spacing:0.2px;font-size:16px;margin-left:20px;">This site has been temporarily closed.<br><span style="color:white; font-size:16px;margin-left:20px;">Please contact the developer(admin)</span><br> <span style="color:white; font-size:16px;margin-left:20px;"> with a request to reactive the site.</span></p1><br><br>
+   <b style="color:white; font-family: 'Inter', sans-serif; font-size:16px; margin-left:20px;">Please contact developer(admin)</b></center><br><br>
+  <img src="WhatsApp.png" alt="" id="ww">
+  <div id="re">
+  <b><a href="https://wa.me/+917349230233?text=I'm paying you the amount.  Please activate my link." style="color:white; font-family: 'Inter', sans-serif; margin-left:55px; text-decoration:none;">+917349230233</a></b><br>
+  </div>
+  <div>
+   <center><button  onclick="myFunction()" type="submit" id="ll">Contact To Admin Now</button><center>
+   </div><br>
+   <script>
+   function myFunction() {
+   window.location.href = "https://wa.me/+917349230233?text=I'm paying you the amount.  Please activate my link.";
+   }
+   </script>
+   </div>
+   </body></html>
